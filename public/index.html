@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.container {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h1 class="message"></h1>
+				<button class="btn">点击获取数据</button>
+			</div>
+		</div>
+
+		<script>
+			const $ = (el) => document.querySelector(el)
+
+			$('.btn').addEventListener('click', async () => {
+				const { data } = await fetch('http://localhost:3323/api/v1/info').then((res) => res.json())
+				$('.message').textContent = data.message
+			})
+		</script>
+	</body>
+</html>
