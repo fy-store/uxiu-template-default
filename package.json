@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "uxiu-template-default",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "uxiu 默认模板",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "start:dist": "node ./dist/index.js",
     "dev": "cross-env NODE_ENV=development tsx watch ./src/index.ts",
     "debug": "cross-env NODE_ENV=development tsx watch --inspect ./src/index.ts",
-    "build": "uxiu-cli build"
+    "build": "uxiu-cli build -p=./public"
   },
   "keywords": [
     "uxiu-template-default",
