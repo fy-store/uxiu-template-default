@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "uxiu-template-default",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "uxiu 默认模板",
   "main": "./dist/index.js",
   "scripts": {
@@ -44,6 +44,7 @@
     "@types/koa__cors": "^5.0.0",
     "@types/node": "^22.10.2",
     "cross-env": "^7.0.3",
+    "prettier": "^3.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
