@@ -58,8 +58,8 @@ importers:
         specifier: ^5.7.2
         version: 5.7.3
       uxiu-cli:
-        specifier: ^0.5.0
-        version: 0.5.0(@types/node@22.13.4)
+        specifier: ^0.5.2
+        version: 0.5.2(@types/node@22.13.4)
 
 packages:
 
@@ -616,10 +616,6 @@ packages:
     resolution: {integrity: sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==}
     engines: {node: '>= 0.4'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
-    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
 
@@ -1002,6 +998,9 @@ packages:
     resolution: {integrity: sha512-TdrF7fW9Rphjq4RjrW0Kp2AW0Ahwu9sRGTkS6bvDi0SCwZlEZYmcfDbEsTz8RVk0EHIS/Vd1bv3JhG+1xZuAyQ==}
     engines: {node: '>=16'}
 
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
   picomatch@4.0.2:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
@@ -1156,8 +1155,8 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  uxiu-cli@0.5.0:
-    resolution: {integrity: sha512-8PiBev/kdDeJim1hNYK32gR+i8IFIls8tlMgYI/qIHL/CBRGi1jqyNHKgijrt4g/VHkyoILuLGf5OHlz7pkvGQ==}
+  uxiu-cli@0.5.2:
+    resolution: {integrity: sha512-Uw6Nt59gxmO/OkSWpokWGLFGHm4Hg0faTELvtKdQ7tTrNIxphwLRL5xxPnyC0ObEigN0ChJCdigpBuN0h0Lb0g==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
@@ -1656,8 +1655,6 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.2.7
 
-  chalk@5.4.1: {}
-
   chardet@0.7.0: {}
 
   cli-width@4.1.0: {}
@@ -2046,6 +2043,8 @@ snapshots:
 
   path-to-regexp@8.2.0: {}
 
+  picocolors@1.1.1: {}
+
   picomatch@4.0.2: {}
 
   prettier@3.5.1: {}
@@ -2205,7 +2204,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  uxiu-cli@0.5.0(@types/node@22.13.4):
+  uxiu-cli@0.5.2(@types/node@22.13.4):
     dependencies:
       '@inquirer/prompts': 7.3.2(@types/node@22.13.4)
       '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.8)
@@ -2213,9 +2212,9 @@ snapshots:
       '@rollup/plugin-node-resolve': 16.0.0(rollup@4.34.8)
       '@rollup/plugin-typescript': 12.1.2(rollup@4.34.8)(tslib@2.8.1)(typescript@5.7.3)
       adm-zip: 0.5.16
-      chalk: 5.4.1
       dayjs: 1.11.13
       execa: 9.5.2
+      picocolors: 1.1.1
       rollup: 4.34.8
       tslib: 2.8.1
       tsx: 4.19.2
