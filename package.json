@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "uxiu-template-default",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "uxiu 默认模板",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "start:dist": "node ./dist/index.js",
     "dev": "cross-env NODE_ENV=development tsx watch ./src/index.ts",
     "debug": "cross-env NODE_ENV=development tsx watch --inspect ./src/index.ts",
-    "build": "uxiu-cli build -p=./public"
+    "build": "uxiu-cli build -c=./public"
   },
   "keywords": [
     "uxiu-template-default",
@@ -34,7 +34,7 @@
     "koa": "^2.15.4",
     "koa-router": "^13.0.1",
     "koa-static": "^5.0.0",
-    "uxiu": "0.6.1"
+    "uxiu": "0.6.4"
   },
   "devDependencies": {
     "@types/ali-oss": "^6.16.11",
@@ -47,7 +47,7 @@
     "prettier": "^3.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "uxiu-cli": "^0.5.2"
+    "uxiu-cli": "0.6.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
