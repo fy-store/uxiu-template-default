@@ -24,8 +24,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       uxiu:
-        specifier: 0.6.4
-        version: 0.6.4(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)
+        specifier: 0.7.2
+        version: 0.7.2(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)
     devDependencies:
       '@types/ali-oss':
         specifier: ^6.16.11
@@ -58,8 +58,8 @@ importers:
         specifier: ^5.7.2
         version: 5.7.3
       uxiu-cli:
-        specifier: 0.6.1
-        version: 0.6.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
+        specifier: 0.6.3
+        version: 0.6.3(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
 
 packages:
 
@@ -427,51 +427,61 @@ packages:
     resolution: {integrity: sha512-A4iphFGNkWRd+5m3VIGuqHnG3MVnqKe7Al57u9mwgbyZ2/xF9Jio72MaY7xxh+Y87VAHmGQr73qoKL9HPbXj1g==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.34.8':
     resolution: {integrity: sha512-S0lqKLfTm5u+QTxlFiAnb2J/2dgQqRy/XvziPtDd1rKZFXHTyYLoVL58M/XFwDI01AQCDIevGLbQrMAtdyanpA==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.34.8':
     resolution: {integrity: sha512-jpz9YOuPiSkL4G4pqKrus0pn9aYwpImGkosRKwNi+sJSkz+WU3anZe6hi73StLOQdfXYXC7hUfsQlTnjMd3s1A==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.34.8':
     resolution: {integrity: sha512-KdSfaROOUJXgTVxJNAZ3KwkRc5nggDk+06P6lgi1HLv1hskgvxHUKZ4xtwHkVYJ1Rep4GNo+uEfycCRRxht7+Q==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-loongarch64-gnu@4.34.8':
     resolution: {integrity: sha512-NyF4gcxwkMFRjgXBM6g2lkT58OWztZvw5KkV2K0qqSnUEqCVcqdh2jN4gQrTn/YUpAcNKyFHfoOZEer9nwo6uQ==}
     cpu: [loong64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.34.8':
     resolution: {integrity: sha512-LMJc999GkhGvktHU85zNTDImZVUCJ1z/MbAJTnviiWmmjyckP5aQsHtcujMjpNdMZPT2rQEDBlJfubhs3jsMfw==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.34.8':
     resolution: {integrity: sha512-xAQCAHPj8nJq1PI3z8CIZzXuXCstquz7cIOL73HHdXiRcKk8Ywwqtx2wrIy23EcTn4aZ2fLJNBB8d0tQENPCmw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.34.8':
     resolution: {integrity: sha512-DdePVk1NDEuc3fOe3dPPTb+rjMtuFw89gw6gVWxQFAuEqqSdDKnrwzZHrUYdac7A7dXl9Q2Vflxpme15gUWQFA==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.34.8':
     resolution: {integrity: sha512-8y7ED8gjxITUltTUEJLQdgpbPh1sUQ0kMTmufRF/Ns5tI9TNMNlhWtmPKKHCU0SilX+3MJkZ0zERYYGIVBYHIA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.34.8':
     resolution: {integrity: sha512-SCXcP0ZpGFIe7Ge+McxY5zKxiEI5ra+GT3QRxL0pMMtxPfpyLAKleZODi1zdRHkz5/BhueUrYtYVgubqe9JBNQ==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.34.8':
     resolution: {integrity: sha512-YHYsgzZgFJzTRbth4h7Or0m5O74Yda+hLin0irAIobkLQFRQd1qWmnoVfwmKm9TXIZVAD0nZ+GEb2ICicLyCnQ==}
@@ -1145,13 +1155,21 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  uxiu-cli@0.6.1:
-    resolution: {integrity: sha512-d6T6/teU4qTwXOrL5CsSh4GnqM8rBTpHtDO91xzVBNF8eWkvlO6QIeL2P9Tje9RnIwjP7MI9tLJ7/qBXcGlQ2w==}
+  uxiu-cli@0.6.3:
+    resolution: {integrity: sha512-bCYXrLP/jbYvtuyvZMfVnswUIJT/XihNr0vp5SksGza99hv36Bf5j/QwMJHbhXQ5EFr95jrYs2jpWkgaoXq7+Q==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
   uxiu@0.6.4:
     resolution: {integrity: sha512-oUTYhGlUqu7TZ/H6nravtETtY8ZjTJ/N/yWX1Sjzr+6NAa7sI4C5yuKEzzPDxfbhTTEKNyOzvfQNM5FdWU9a5Q==}
+    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+    peerDependencies:
+      koa: ^2.15.3
+      nanoid: ^5.0.9
+      path-to-regexp: ^8.2.0
+
+  uxiu@0.7.2:
+    resolution: {integrity: sha512-vdJbT7gRnwUInADe9yQEVc9XhaORP4Xl+EY0Hl2KTW/qaVwxoW34XHmrtlduQ4vnhfEKcpYSEyQJ8QH1a2Gb+A==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     peerDependencies:
       koa: ^2.15.3
@@ -2194,7 +2212,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  uxiu-cli@0.6.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
+  uxiu-cli@0.6.3(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
     dependencies:
       '@inquirer/prompts': 7.3.2(@types/node@22.13.4)
       '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.8)
@@ -2218,6 +2236,12 @@ snapshots:
       - typescript
 
   uxiu@0.6.4(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0):
+    dependencies:
+      koa: 2.15.4
+      nanoid: 5.1.0
+      path-to-regexp: 8.2.0
+
+  uxiu@0.7.2(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0):
     dependencies:
       koa: 2.15.4
       nanoid: 5.1.0
