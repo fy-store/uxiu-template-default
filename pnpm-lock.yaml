@@ -58,8 +58,8 @@ importers:
         specifier: ^5.7.2
         version: 5.7.3
       uxiu-cli:
-        specifier: 0.7.0
-        version: 0.7.0(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
+        specifier: 0.7.1
+        version: 0.7.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
 
 packages:
 
@@ -1155,8 +1155,8 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
-  uxiu-cli@0.7.0:
-    resolution: {integrity: sha512-LezcSt+sowB9844MyibtqGlWkJjrcibqF54YrjCh16+9OSh6JVhVZG+T0flrjkPvZIL5U2GthagYD7i2uVIJMw==}
+  uxiu-cli@0.7.1:
+    resolution: {integrity: sha512-orVWNbNmICXXrY83JNdy9D9Z4UOG7oQtijuVYwd3UErkKPq4PPxSTi04QyPTitc4yHDTI+aDcg/lgyoziRZjFg==}
     engines: {node: ^16.0.0 || ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
@@ -2212,7 +2212,7 @@ snapshots:
 
   unpipe@1.0.0: {}
 
-  uxiu-cli@0.7.0(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
+  uxiu-cli@0.7.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
     dependencies:
       '@inquirer/prompts': 7.3.2(@types/node@22.13.4)
       '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.8)

@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "uxiu-template-default",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "默认模板",
   "main": "./dist/index.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "prettier": "^3.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "uxiu-cli": "0.7.0"
+    "uxiu-cli": "0.7.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
