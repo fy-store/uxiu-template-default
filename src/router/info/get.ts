@@ -1,4 +1,3 @@
-import { sleep, createCheck } from 'uxiu'
 import Router from 'koa-router'
 const router = new Router()
 export default router
@@ -10,7 +9,5 @@ router.get('/', async (ctx) => {
 		data: {
 			message: 'Hello World !'
 		}
-
 	}
 })
-

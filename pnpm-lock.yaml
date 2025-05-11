@@ -24,8 +24,13 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       uxiu:
+<<<<<<< HEAD
         specifier: ^0.7.2
         version: 0.7.2(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)
+=======
+        specifier: ^0.10.0
+        version: 0.10.0(koa@2.15.4)(path-to-regexp@8.2.0)
+>>>>>>> a149ee7 (feat: 调整模板, 升级依赖)
     devDependencies:
       '@types/ali-oss':
         specifier: ^6.16.11
@@ -58,8 +63,13 @@ importers:
         specifier: ^5.7.2
         version: 5.7.3
       uxiu-cli:
+<<<<<<< HEAD
         specifier: 0.7.1
         version: 0.7.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
+=======
+        specifier: 0.7.2
+        version: 0.7.2(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3)
+>>>>>>> a149ee7 (feat: 调整模板, 升级依赖)
 
 packages:
 
@@ -1155,21 +1165,25 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
 
+<<<<<<< HEAD
   uxiu-cli@0.7.1:
     resolution: {integrity: sha512-orVWNbNmICXXrY83JNdy9D9Z4UOG7oQtijuVYwd3UErkKPq4PPxSTi04QyPTitc4yHDTI+aDcg/lgyoziRZjFg==}
+=======
+  uxiu-cli@0.7.2:
+    resolution: {integrity: sha512-4NzO3l9gh/mz6eBPS2AihsuAViA6d06NL04ScgErAsyCFkmgTRheZ7heKzIYWIApyK05oZHN6NVR6Vb/P2hJBg==}
+>>>>>>> a149ee7 (feat: 调整模板, 升级依赖)
     engines: {node: ^16.0.0 || ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  uxiu@0.6.4:
-    resolution: {integrity: sha512-oUTYhGlUqu7TZ/H6nravtETtY8ZjTJ/N/yWX1Sjzr+6NAa7sI4C5yuKEzzPDxfbhTTEKNyOzvfQNM5FdWU9a5Q==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+  uxiu@0.10.0:
+    resolution: {integrity: sha512-5GNLzeL/9gqBNVLxa6tCYxsqej+WW+mUCJqZMfYR3Fa1Lth6h+R093z/wT73MfYu4C7EN30J7++gfQ9zbHGwJw==}
+    engines: {node: ^16.0.0 || ^18.0.0 || ^20.0.0 || >=22.0.0}
     peerDependencies:
       koa: ^2.15.3
-      nanoid: ^5.0.9
       path-to-regexp: ^8.2.0
 
-  uxiu@0.7.2:
-    resolution: {integrity: sha512-vdJbT7gRnwUInADe9yQEVc9XhaORP4Xl+EY0Hl2KTW/qaVwxoW34XHmrtlduQ4vnhfEKcpYSEyQJ8QH1a2Gb+A==}
+  uxiu@0.6.4:
+    resolution: {integrity: sha512-oUTYhGlUqu7TZ/H6nravtETtY8ZjTJ/N/yWX1Sjzr+6NAa7sI4C5yuKEzzPDxfbhTTEKNyOzvfQNM5FdWU9a5Q==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     peerDependencies:
       koa: ^2.15.3
@@ -2212,7 +2226,11 @@ snapshots:
 
   unpipe@1.0.0: {}
 
+<<<<<<< HEAD
   uxiu-cli@0.7.1(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
+=======
+  uxiu-cli@0.7.2(@types/node@22.13.4)(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0)(typescript@5.7.3):
+>>>>>>> a149ee7 (feat: 调整模板, 升级依赖)
     dependencies:
       '@inquirer/prompts': 7.3.2(@types/node@22.13.4)
       '@rollup/plugin-commonjs': 28.0.2(rollup@4.34.8)
@@ -2235,13 +2253,12 @@ snapshots:
       - path-to-regexp
       - typescript
 
-  uxiu@0.6.4(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0):
+  uxiu@0.10.0(koa@2.15.4)(path-to-regexp@8.2.0):
     dependencies:
       koa: 2.15.4
-      nanoid: 5.1.0
       path-to-regexp: 8.2.0
 
-  uxiu@0.7.2(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0):
+  uxiu@0.6.4(koa@2.15.4)(nanoid@5.1.0)(path-to-regexp@8.2.0):
     dependencies:
       koa: 2.15.4
       nanoid: 5.1.0
