@@ -34,7 +34,7 @@
     "koa": "^2.15.4",
     "koa-router": "^13.0.1",
     "koa-static": "^5.0.0",
-    "uxiu": "^0.10.0"
+    "uxiu": "^0.12.0"
   },
   "devDependencies": {
     "@types/ali-oss": "^6.16.11",
