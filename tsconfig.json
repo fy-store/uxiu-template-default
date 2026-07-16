@@ -3,21 +3,26 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "noEmitOnError": false,
+        "strict": true,
         "target": "ESNext",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
         "skipLibCheck": true,
+        // "noEmit": true,
+        // "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "./dist",
-        "baseUrl": ".",
         "paths": {
             "@/*": [
                 "./src/*"
             ]
-        },
+        }
     },
     "include": [
-        "src/**/*"
+        "./src/**/*",
+        "./scripts/**/*",
+        "./sys.config.ts",
+        "./uxiu-cli.config.ts"
     ],
     "lib": [
         "esnext",

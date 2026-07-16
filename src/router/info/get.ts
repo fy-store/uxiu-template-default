@@ -1,13 +1,14 @@
-import Router from 'koa-router'
-const router = new Router()
-export default router
+import Router from '@koa/router'
 
-router.get('/', async (ctx) => {
+export const getRouter = new Router()
+let i = 0
+getRouter.get('/', async (ctx) => {
+	i++
 	ctx.body = {
 		code: 0,
 		msg: '获取成功',
 		data: {
-			message: 'Hello World !'
+			message: `Hello World ! ${i}`
 		}
 	}
 })

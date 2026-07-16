@@ -31,7 +31,7 @@
 			const $ = (el) => document.querySelector(el)
 
 			$('.btn').addEventListener('click', async () => {
-				const { data } = await fetch('http://localhost:3323/api/v1/info').then((res) => res.json())
+				const { data } = await fetch('http://localhost:3323/api/info').then((res) => res.json())
 				$('.message').textContent = data.message
 			})
 		</script>

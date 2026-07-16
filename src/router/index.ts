@@ -1,6 +1,5 @@
-import Router from 'koa-router'
-import info from './info/index.js'
-const router = new Router()
-export default router
+import Router from '@koa/router'
+import { infoRouter } from './info/index.js'
 
-router.use('/api', info.routes())
+export const router = new Router()
+router.use('/api', infoRouter.routes())
