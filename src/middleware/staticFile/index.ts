@@ -6,12 +6,15 @@ import { getFileDisposition, getFileQueryValue } from '@/utils'
 
 export interface StaticFileOptions {
 	startPath?: string
-	publicPath?: string
+	publicPath: string
 }
 
 /** 访问公共文件 */
-export function staticFile(options: StaticFileOptions = {}) {
-	let { startPath = '/', publicPath = '/' } = options
+export function staticFile(options: StaticFileOptions) {
+	let { startPath = '/', publicPath } = options ?? {}
+	if (!publicPath) {
+		throw new Error('middleware -> staticFile: publicPath is required !')
+	}
 	startPath = path.join('/', startPath).replaceAll('\\', '/')
 	publicPath = path.join('/', publicPath).replaceAll('\\', '/')
 	return async (ctx: Context, next: Next) => {
@@ -36,7 +39,7 @@ export function staticFile(options: StaticFileOptions = {}) {
 			const filePath =
 				ctx.path === '/'
 					? path.join(publicPath, '/index.html')
-					: path.join(publicPath, ctx.path.replaceAll(startPath, ''))
+					: path.join(publicPath, ctx.path.replace(startPath, '')) // 只替换一次，避免替换多个路径
 			await send(ctx, filePath, {
 				maxage: 0,
 				immutable: true,

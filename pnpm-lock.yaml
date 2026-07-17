@@ -27,21 +27,12 @@ importers:
         specifier: ^4.1.0
         version: 4.1.0
       uxiu:
-        specifier: 0.22.0-alpha.1
-        version: 0.22.0-alpha.1(@koa/router@15.7.0(koa@3.2.1))(koa@3.2.1)(path-to-regexp@8.4.2)
+        specifier: ^0.22.0
+        version: 0.22.0(@koa/router@15.7.0(koa@3.2.1))(koa@3.2.1)(path-to-regexp@8.4.2)
     devDependencies:
-      '@types/ali-oss':
-        specifier: ^6.23.3
-        version: 6.23.3
       '@types/koa':
         specifier: ^3.0.3
         version: 3.0.3
-      '@types/koa-router':
-        specifier: ^7.4.9
-        version: 7.4.9
-      '@types/koa-static':
-        specifier: ^4.0.4
-        version: 4.0.4
       '@types/koa__cors':
         specifier: ^5.0.1
         version: 5.0.1
@@ -522,9 +513,6 @@ packages:
   '@types/accepts@1.3.7':
     resolution: {integrity: sha512-Pay9fq2lM2wXPWbteBsRAGiWH2hig4ZE2asK+mm7kUzlxRTfL961rj89I6zV/E3PcIkDqyuBEcMxFT7rccugeQ==}
 
-  '@types/ali-oss@6.23.3':
-    resolution: {integrity: sha512-huSf6njkqhSeR37OMJTGMCyUg2d9Zp2AioefhYuUMeh0vNM+WybctrBor7bO/RcCbLCQI6sHn6NtPBIWALYVJg==}
-
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
 
@@ -557,15 +545,6 @@ packages:
 
   '@types/koa-compose@3.2.9':
     resolution: {integrity: sha512-BroAZ9FTvPiCy0Pi8tjD1OfJ7bgU1gQf0eR6e1Vm+JJATy9eKOG3hQMFtMciMawiSOVnLMdmUOC46s7HBhSTsA==}
-
-  '@types/koa-router@7.4.9':
-    resolution: {integrity: sha512-YibkqJrFWwwF55YtZo6dORpMj/1zfweHHIZA/qpA+2JPcVbBopAvLjejTcO1ojWAJfzf1tPC+CrPnLDuVRkUEA==}
-
-  '@types/koa-send@4.1.6':
-    resolution: {integrity: sha512-vgnNGoOJkx7FrF0Jl6rbK1f8bBecqAchKpXtKuXzqIEdXTDO6dsSTjr+eZ5m7ltSjH4K/E7auNJEQCAd0McUPA==}
-
-  '@types/koa-static@4.0.4':
-    resolution: {integrity: sha512-j1AUzzl7eJYEk9g01hNTlhmipFh8RFbOQmaMNLvLcNNAkPw0bdTs3XTa3V045XFlrWN0QYnblbDJv2RzawTn6A==}
 
   '@types/koa@3.0.3':
     resolution: {integrity: sha512-TdtNEJ7sYSrFQcVuS2ySsVqnq5EyE3oJbnfFJvkC9UtGP4Kpem5KE7r+ivHIbIAQAofSqnlB5D3vkfYO69TQpg==}
@@ -1446,8 +1425,8 @@ packages:
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  uxiu@0.22.0-alpha.1:
-    resolution: {integrity: sha512-pvOdLW0/PVIuquTSk0dQVC1D86ddduut6EHtDY6AsuvsCvxrrTKIaxYePYUiM6ttjim2iY8uEOxjDGKgOQKtgg==}
+  uxiu@0.22.0:
+    resolution: {integrity: sha512-bbjBoTijCtrmQiNynzgR0HM0oIsvyFDGhMQl7cF8zEh0H806l/kWfO9gDFNnRJx/AqR64UbQTsguoNttXDbtNA==}
     engines: {node: '>=22.18.0'}
     peerDependencies:
       '@koa/router': ^15.0.0
@@ -1829,8 +1808,6 @@ snapshots:
     dependencies:
       '@types/node': 26.1.1
 
-  '@types/ali-oss@6.23.3': {}
-
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
@@ -1876,19 +1853,6 @@ snapshots:
   '@types/koa-compose@3.2.9':
     dependencies:
       '@types/koa': 3.0.3
-
-  '@types/koa-router@7.4.9':
-    dependencies:
-      '@types/koa': 3.0.3
-
-  '@types/koa-send@4.1.6':
-    dependencies:
-      '@types/koa': 3.0.3
-
-  '@types/koa-static@4.0.4':
-    dependencies:
-      '@types/koa': 3.0.3
-      '@types/koa-send': 4.1.6
 
   '@types/koa@3.0.3':
     dependencies:
@@ -2658,7 +2622,7 @@ snapshots:
       - unrun
       - vue-tsc
 
-  uxiu@0.22.0-alpha.1(@koa/router@15.7.0(koa@3.2.1))(koa@3.2.1)(path-to-regexp@8.4.2):
+  uxiu@0.22.0(@koa/router@15.7.0(koa@3.2.1))(koa@3.2.1)(path-to-regexp@8.4.2):
     dependencies:
       '@oxc-project/runtime': 0.135.0
       event-imt: 0.2.7

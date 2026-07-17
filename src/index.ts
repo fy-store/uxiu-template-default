@@ -12,7 +12,7 @@ createApp({
 		ctx.app.use(bodyParser())
 		const { router } = await import('@/router/index.js')
 		ctx.app.use(router.routes())
-		ctx.app.use(staticFile({publicPath: 'public'}))
+		ctx.app.use(staticFile({ publicPath: '/public' }))
 	},
 	async mounted(ctx) {
 		console.log('')
