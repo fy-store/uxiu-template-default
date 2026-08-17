@@ -2,7 +2,7 @@ import type { Context, Next } from 'koa'
 import path from 'node:path'
 import { send } from '@koa/send'
 import mime from 'mime'
-import { getFileDisposition, getFileQueryValue } from '@server/utils'
+import { getFileDisposition, getFileQueryValue } from '@/utils'
 
 export interface StaticFileOptions {
 	/** 访问路径前缀, 默认 `/` 只有以此开头的路径才会被处理 */
