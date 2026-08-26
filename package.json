@@ -35,7 +35,7 @@
     "@koa/send": "^6.0.0",
     "koa": "^3.2.1",
     "mime": "^4.1.0",
-    "uxiu": "^0.22.0"
+    "uxiu": "^0.22.1"
   },
   "devDependencies": {
     "@types/koa": "^3.0.3",
